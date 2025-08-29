@@ -68,13 +68,13 @@ const Chatbot: React.FC = () => {
         <>
             <button
                 onClick={() => setIsOpen(!isOpen)}
-                className="fixed bottom-6 right-6 bg-[#0F69F9] text-white p-4 rounded-full shadow-2xl shadow-blue-500/30 hover:bg-[#0d5ad1] transition-all duration-300 transform hover:scale-110 z-50"
+                className="fixed bottom-6 left-6 bg-[#0F69F9] text-white p-4 rounded-full shadow-2xl shadow-blue-500/30 hover:bg-[#0d5ad1] transition-all duration-300 transform hover:scale-110 z-50"
                 aria-label="Toggle Chatbot"
             >
                 <ChatBubbleBottomCenterTextIcon className="h-8 w-8" />
             </button>
 
-            <div className={`fixed bottom-24 right-6 w-[90vw] max-w-md h-[70vh] max-h-[600px] flex flex-col bg-gray-900/50 backdrop-blur-2xl border border-white/10 rounded-2xl shadow-2xl shadow-black/50 transition-all duration-500 ease-in-out z-50 ${isOpen ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10 pointer-events-none'}`}>
+            <div className={`fixed bottom-24 left-6 w-[90vw] max-w-md h-[70vh] max-h-[600px] flex flex-col bg-gray-900/50 backdrop-blur-2xl border border-white/10 rounded-2xl shadow-2xl shadow-black/50 transition-all duration-500 ease-in-out z-50 ${isOpen ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10 pointer-events-none'}`}>
                 <div className="flex items-center justify-between p-4 border-b border-white/10">
                     <h3 className="text-lg font-bold text-white">Byteflow Assistant</h3>
                     <button onClick={() => setIsOpen(false)} className="text-white/70 hover:text-white">

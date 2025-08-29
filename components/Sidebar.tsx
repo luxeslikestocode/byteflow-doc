@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink, useLocation } from 'react-router-dom';
+import { NavLink, useLocation, Link } from 'react-router-dom';
 import { XMarkIcon } from '@heroicons/react/24/outline';
 import { PRIMARY_NAV, SECONDARY_NAV, GUIDES_NAV, BYTEFLOW_LOGO } from '../constants';
 import type { NavItem, NavSection } from '../types';
@@ -41,15 +41,17 @@ const NavLinks: React.FC<{ section: NavSection }> = ({ section }) => {
   );
 };
 
-const SidebarContent: React.FC = () => (
+const SidebarContent: React.FC<{onClose?: () => void}> = ({onClose}) => (
     <div className="flex flex-col h-full bg-black/30 backdrop-blur-xl p-4">
-        <div className="flex items-center justify-between mb-8 lg:hidden">
-            <img src={BYTEFLOW_LOGO} alt="Byteflow Logo" className="h-[52px] w-auto" />
+        <div className="flex items-center justify-between mb-8">
+            <Link to="/" onClick={onClose}>
+              <img src={BYTEFLOW_LOGO} alt="Byteflow Logo" className="h-[52px] w-auto" />
+            </Link>
         </div>
         <nav className="flex-1 space-y-8 overflow-y-auto">
             {PRIMARY_NAV.map(section => <NavLinks key={section.title} section={section} />)}
             {GUIDES_NAV.map(section => <NavLinks key={section.title} section={section} />)}
-            {SECONDARY_NAV.map(section => <NavLinks key={section.title} section={section} />)}
+            {SECONDARY_NAV.map(section => section.items.length > 0 && <NavLinks key={section.title} section={section} />)}
         </nav>
     </div>
 );
@@ -66,7 +68,7 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
       >
         <div className="absolute inset-0 bg-black/60" onClick={onClose}></div>
         <div className="relative w-64 h-full border-r border-white/10">
-          <SidebarContent />
+          <SidebarContent onClose={onClose} />
           <button onClick={onClose} className="absolute top-4 right-4 text-white/70 hover:text-white">
             <XMarkIcon className="h-6 w-6" />
           </button>

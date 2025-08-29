@@ -37,7 +37,9 @@ const Header: React.FC<HeaderProps> = ({ onMenuClick }) => {
           <Bars3Icon className="h-6 w-6" />
         </button>
         <div className="hidden lg:block">
-            <img src={BYTEFLOW_LOGO} alt="Byteflow Logo" className="h-[52px] w-auto" />
+            <Link to="/">
+              <img src={BYTEFLOW_LOGO} alt="Byteflow Logo" className="h-[52px] w-auto" />
+            </Link>
         </div>
         <div className="flex-1 flex justify-end">
           <div className="relative w-full max-w-xs" ref={searchContainerRef}>

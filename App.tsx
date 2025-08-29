@@ -16,6 +16,7 @@ import InfoProductPage from './pages/InfoProductPage';
 import BusinessStrategyGuidePage from './pages/BusinessStrategyGuidePage';
 import MarketingSalesGuidePage from './pages/MarketingSalesGuidePage';
 import ProductSystemsGuidePage from './pages/ProductSystemsGuidePage';
+import FaqsPage from './pages/FaqsPage';
 
 const App: React.FC = () => {
   return (
@@ -38,8 +39,7 @@ const App: React.FC = () => {
           <Route path="guides/marketing-sales" element={<MarketingSalesGuidePage />} />
           <Route path="guides/product-systems" element={<ProductSystemsGuidePage />} />
 
-          <Route path="case-studies" element={<ComingSoonPage title="Case Studies" />} />
-          <Route path="faqs" element={<ComingSoonPage title="FAQs" />} />
+          <Route path="faqs" element={<FaqsPage />} />
         </Route>
       </Routes>
     </HashRouter>

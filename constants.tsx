@@ -1,7 +1,6 @@
 import React from 'react';
 import type { NavSection } from './types';
-import { HomeIcon, BuildingOffice2Icon, WrenchScrewdriverIcon, BanknotesIcon, UserGroupIcon, PaintBrushIcon, ChartBarIcon, Cog6ToothIcon, DocumentDuplicateIcon, CircleStackIcon, BookOpenIcon, AcademicCapIcon, RocketLaunchIcon, CodeBracketIcon } from '@heroicons/react/24/outline';
-import { PresentationChartLineIcon, QuestionMarkCircleIcon } from '@heroicons/react/24/solid';
+import { HomeIcon, BuildingOffice2Icon, WrenchScrewdriverIcon, BanknotesIcon, UserGroupIcon, PaintBrushIcon, ChartBarIcon, Cog6ToothIcon, DocumentDuplicateIcon, CircleStackIcon, BookOpenIcon, AcademicCapIcon, RocketLaunchIcon, CodeBracketIcon, QuestionMarkCircleIcon } from '@heroicons/react/24/outline';
 
 export const PRIMARY_NAV: NavSection[] = [
   {
@@ -18,6 +17,7 @@ export const PRIMARY_NAV: NavSection[] = [
       { name: 'Templates', path: '/templates', icon: <DocumentDuplicateIcon className="w-5 h-5" /> },
       { name: 'Resources', path: '/resources', icon: <CircleStackIcon className="w-5 h-5" /> },
       { name: 'Info Product', path: '/info-product', icon: <AcademicCapIcon className="w-5 h-5" /> },
+      { name: 'FAQs', path: '/faqs', icon: <QuestionMarkCircleIcon className="w-5 h-5" /> },
     ],
   },
 ];
@@ -37,8 +37,7 @@ export const SECONDARY_NAV: NavSection[] = [
     {
       title: 'Secondary Pages',
       items: [
-        { name: 'Case Studies', path: '/case-studies', icon: <PresentationChartLineIcon className="w-5 h-5" /> },
-        { name: 'FAQs', path: '/faqs', icon: <QuestionMarkCircleIcon className="w-5 h-5" /> },
+        // Empty for now
       ],
     },
 ];
