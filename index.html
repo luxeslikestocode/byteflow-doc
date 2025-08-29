@@ -6,10 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Byteflow Knowledge Base</title>
     <script>
-      // Polyfill process.env for browser environment to avoid a crash.
-      // This allows the app to run on static hosts like Netlify.
+      // Robust polyfill for browser environment. Some libraries expect Node.js globals like 'process' and 'global'.
+      // This prevents crashes on static hosts like Netlify.
+      if (typeof global === 'undefined') {
+        window.global = window;
+      }
       if (typeof process === 'undefined') {
-        window.process = { env: {} };
+        window.process = {
+          env: {}
+        };
       }
     </script>
     <script src="https://cdn.tailwindcss.com"></script>
