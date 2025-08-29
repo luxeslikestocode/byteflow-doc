@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import PageTitle from '../components/PageTitle';
-import GlassCard from '../components/GlassCard';
+import PageTitle from '../components/PageTitle.tsx';
+import GlassCard from '../components/GlassCard.tsx';
 import { ChevronDownIcon } from '@heroicons/react/24/solid';
 
 const faqs = [

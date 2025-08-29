@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { GoogleGenAI, Chat } from "@google/genai";
 import { PaperAirplaneIcon, ChatBubbleBottomCenterTextIcon, XMarkIcon } from '@heroicons/react/24/solid';
-import { CHATBOT_SYSTEM_INSTRUCTION } from '../constants';
+import { CHATBOT_SYSTEM_INSTRUCTION } from '../constants.tsx';
 
 interface Message {
     role: 'user' | 'model';

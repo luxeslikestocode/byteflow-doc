@@ -1,6 +1,6 @@
 import React from 'react';
-import PageTitle from '../components/PageTitle';
-import GlassCard from '../components/GlassCard';
+import PageTitle from '../components/PageTitle.tsx';
+import GlassCard from '../components/GlassCard.tsx';
 import { HashtagIcon, LightBulbIcon, BriefcaseIcon, UserGroupIcon, AcademicCapIcon } from '@heroicons/react/24/solid';
 
 const slackChannels = [

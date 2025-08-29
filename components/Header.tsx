@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Bars3Icon, MagnifyingGlassIcon, BuildingOffice2Icon, WrenchScrewdriverIcon, PaintBrushIcon } from '@heroicons/react/24/outline';
-import { BYTEFLOW_LOGO } from '../constants';
+import { BYTEFLOW_LOGO } from '../constants.tsx';
 import { Link } from 'react-router-dom';
 
 interface HeaderProps {

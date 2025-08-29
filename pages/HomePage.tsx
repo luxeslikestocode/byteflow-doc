@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import GlassCard from '../components/GlassCard';
+import GlassCard from '../components/GlassCard.tsx';
 import { BuildingOffice2Icon, WrenchScrewdriverIcon, BanknotesIcon, UserGroupIcon, PaintBrushIcon, DocumentDuplicateIcon } from '@heroicons/react/24/outline';
-import StaggeredFadeIn from '../components/StaggeredFadeIn';
+import StaggeredFadeIn from '../components/StaggeredFadeIn.tsx';
 
 const quickLinks = [
   { name: 'Company Overview', path: '/company-overview', icon: <BuildingOffice2Icon className="h-10 w-10 text-[#0F69F9]" />, description: 'Mission, values, and goals.' },

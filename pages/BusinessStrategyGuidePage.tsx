@@ -1,6 +1,6 @@
 import React from 'react';
-import PageTitle from '../components/PageTitle';
-import GlassCard from '../components/GlassCard';
+import PageTitle from '../components/PageTitle.tsx';
+import GlassCard from '../components/GlassCard.tsx';
 
 const Section: React.FC<{ title: string; children: React.ReactNode }> = ({ title, children }) => (
     <section className="mb-16">

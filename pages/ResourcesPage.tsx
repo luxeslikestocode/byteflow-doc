@@ -1,7 +1,7 @@
 import React from 'react';
-import PageTitle from '../components/PageTitle';
-import GlassCard from '../components/GlassCard';
-import StaggeredFadeIn from '../components/StaggeredFadeIn';
+import PageTitle from '../components/PageTitle.tsx';
+import GlassCard from '../components/GlassCard.tsx';
+import StaggeredFadeIn from '../components/StaggeredFadeIn.tsx';
 import { ArrowTopRightOnSquareIcon } from '@heroicons/react/24/solid';
 
 const resourceCategories = [

@@ -1,8 +1,8 @@
 import React from 'react';
 import { NavLink, useLocation, Link } from 'react-router-dom';
 import { XMarkIcon } from '@heroicons/react/24/outline';
-import { PRIMARY_NAV, SECONDARY_NAV, GUIDES_NAV, BYTEFLOW_LOGO } from '../constants';
-import type { NavItem, NavSection } from '../types';
+import { PRIMARY_NAV, SECONDARY_NAV, GUIDES_NAV, BYTEFLOW_LOGO } from '../constants.tsx';
+import type { NavItem, NavSection } from '../types.ts';
 
 interface SidebarProps {
   isOpen: boolean;

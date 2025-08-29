@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import PageTitle from '../components/PageTitle';
-import GlassCard from '../components/GlassCard';
+import PageTitle from '../components/PageTitle.tsx';
+import GlassCard from '../components/GlassCard.tsx';
 import { CheckIcon } from '@heroicons/react/24/solid';
-import StaggeredFadeIn from '../components/StaggeredFadeIn';
+import StaggeredFadeIn from '../components/StaggeredFadeIn.tsx';
 
 const pricingTiers = [
     {

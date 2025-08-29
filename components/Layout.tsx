@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { Outlet, useLocation } from 'react-router-dom';
-import Header from './Header';
-import Sidebar from './Sidebar';
-import Chatbot from './Chatbot';
+import Header from './Header.tsx';
+import Sidebar from './Sidebar.tsx';
+import Chatbot from './Chatbot.tsx';
 
 const Layout: React.FC = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);

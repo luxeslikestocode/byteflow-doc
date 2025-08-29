@@ -1,22 +1,22 @@
 import React from 'react';
 import { HashRouter, Routes, Route } from 'react-router-dom';
-import Layout from './components/Layout';
-import HomePage from './pages/HomePage';
-import CompanyOverviewPage from './pages/CompanyOverviewPage';
-import ServicesPage from './pages/ServicesPage';
-import BusinessModelPage from './pages/BusinessModelPage';
-import BrandGuidelinesPage from './pages/BrandGuidelinesPage';
-import ContentStrategyPage from './pages/ContentStrategyPage';
-import TemplatesPage from './pages/TemplatesPage';
-import ComingSoonPage from './pages/ComingSoonPage';
-import TargetMarketPage from './pages/TargetMarketPage';
-import OperationsPage from './pages/OperationsPage';
-import ResourcesPage from './pages/ResourcesPage';
-import InfoProductPage from './pages/InfoProductPage';
-import BusinessStrategyGuidePage from './pages/BusinessStrategyGuidePage';
-import MarketingSalesGuidePage from './pages/MarketingSalesGuidePage';
-import ProductSystemsGuidePage from './pages/ProductSystemsGuidePage';
-import FaqsPage from './pages/FaqsPage';
+import Layout from './components/Layout.tsx';
+import HomePage from './pages/HomePage.tsx';
+import CompanyOverviewPage from './pages/CompanyOverviewPage.tsx';
+import ServicesPage from './pages/ServicesPage.tsx';
+import BusinessModelPage from './pages/BusinessModelPage.tsx';
+import BrandGuidelinesPage from './pages/BrandGuidelinesPage.tsx';
+import ContentStrategyPage from './pages/ContentStrategyPage.tsx';
+import TemplatesPage from './pages/TemplatesPage.tsx';
+import ComingSoonPage from './pages/ComingSoonPage.tsx';
+import TargetMarketPage from './pages/TargetMarketPage.tsx';
+import OperationsPage from './pages/OperationsPage.tsx';
+import ResourcesPage from './pages/ResourcesPage.tsx';
+import InfoProductPage from './pages/InfoProductPage.tsx';
+import BusinessStrategyGuidePage from './pages/BusinessStrategyGuidePage.tsx';
+import MarketingSalesGuidePage from './pages/MarketingSalesGuidePage.tsx';
+import ProductSystemsGuidePage from './pages/ProductSystemsGuidePage.tsx';
+import FaqsPage from './pages/FaqsPage.tsx';
 
 const App: React.FC = () => {
   return (

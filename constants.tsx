@@ -1,5 +1,5 @@
 import React from 'react';
-import type { NavSection } from './types';
+import type { NavSection } from './types.ts';
 import { HomeIcon, BuildingOffice2Icon, WrenchScrewdriverIcon, BanknotesIcon, UserGroupIcon, PaintBrushIcon, ChartBarIcon, Cog6ToothIcon, DocumentDuplicateIcon, CircleStackIcon, BookOpenIcon, AcademicCapIcon, RocketLaunchIcon, CodeBracketIcon, QuestionMarkCircleIcon } from '@heroicons/react/24/outline';
 
 export const PRIMARY_NAV: NavSection[] = [
