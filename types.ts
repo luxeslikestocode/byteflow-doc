@@ -1,13 +1,2 @@
-
-import type React from 'react';
-
-export interface NavItem {
-  name: string;
-  path: string;
-  icon?: React.ReactNode;
-}
-
-export interface NavSection {
-  title: string;
-  items: NavItem[];
-}
+// This file's contents have been moved to index.tsx to fix browser module errors.
+// It is no longer needed and can be deleted.
