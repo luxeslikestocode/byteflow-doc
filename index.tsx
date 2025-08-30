@@ -7,9 +7,8 @@
 // without a build tool like Vite or Webpack. All other .ts and .tsx files have been
 // emptied and can be deleted.
 
-// React and ReactDOM are loaded globally via <script> tags in index.html to ensure stability.
-declare const React: any;
-declare const ReactDOM: any;
+import React from 'react';
+import { createRoot } from 'react-dom/client';
 
 import { HashRouter, Routes, Route, Outlet, useLocation, NavLink, Link } from 'react-router-dom';
 import { GoogleGenAI, Chat } from "@google/genai";
@@ -1879,7 +1878,7 @@ if (!rootElement) {
   throw new Error("Could not find root element to mount to");
 }
 
-const root = ReactDOM.createRoot(rootElement);
+const root = createRoot(rootElement);
 root.render(
   <React.StrictMode>
     <App />
